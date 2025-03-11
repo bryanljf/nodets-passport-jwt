@@ -1,8 +1,8 @@
 import { Strategy as LocalStrategy }from 'passport-local';
-import { createUserToken, findUserByEmailAndPassword } from '../services/user';
+import { createUserToken, findUserByEmailAndPassword } from '../../services/user';
 import { RequestHandler } from 'express';
 import passport from 'passport';
-import { TypeUser } from '../models/User';
+import { TypeUser } from '../../models/User';
 
 type LocalStrategyResponse = {
     auth: {

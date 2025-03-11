@@ -1,8 +1,8 @@
 import {ExtractJwt, Strategy as JWTStrategy } from 'passport-jwt';
-import { findUserById } from '../services/user';
+import { findUserById } from '../../services/user';
 import { RequestHandler } from 'express';
 import passport from 'passport';
-import { TypeUser } from '../models/User';
+import { TypeUser } from '../../models/User';
 
 const options = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),

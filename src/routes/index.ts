@@ -1,7 +1,7 @@
 import Router from 'express';
-import { localStrategyAuth } from '../libs/passport-local';
-import { bearerStrategyAuth } from '../libs/passport-bearer';
-import { jwtStrategyAuth } from '../libs/passport-jwt';
+import { localStrategyAuth } from '../middlewares/libs/passport-local';
+import { bearerStrategyAuth } from '../middlewares/libs/passport-bearer';
+import { jwtStrategyAuth } from '../middlewares/libs/passport-jwt';
 
 const router = Router();
 

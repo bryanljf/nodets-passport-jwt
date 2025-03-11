@@ -4,9 +4,9 @@ import helmet from 'helmet';
 import cors from 'cors';
 import router from './routes';
 import passport from 'passport';
-import { localStrategy } from './libs/passport-local';
-import { bearerStrategy } from './libs/passport-bearer';
-import { jwtStrategy } from './libs/passport-jwt';
+import { localStrategy } from './middlewares/libs/passport-local';
+import { bearerStrategy } from './middlewares/libs/passport-bearer';
+import { jwtStrategy } from './middlewares/libs/passport-jwt';
 
 const server = express();
 

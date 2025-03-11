@@ -1,8 +1,8 @@
 import { Strategy as BearerStrategy } from 'passport-http-bearer';
-import { findUserByToken } from '../services/user';
+import { findUserByToken } from '../../services/user';
 import { RequestHandler } from 'express';
 import passport from 'passport';
-import { TypeUser } from '../models/User';
+import { TypeUser } from '../../models/User';
 
 export const bearerStrategy = new BearerStrategy(async (token, done) => {
     console.log('token', token);
